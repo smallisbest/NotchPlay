@@ -818,7 +818,7 @@ footer .links { display: flex; gap: 24px; }
     ├── ...
     ├── k100.m4a
     ├── k100.jpg
-    └── ko.jpg           ← 이미지 없는 페이지 폴백 (선택)</pre>
+    └── ko.jpg           ← <span style="color:#FFB359">defaultimage</span> — 이미지 없는 페이지 폴백</pre>
             <p>
                 <span data-lang="en">Two JSON copies? <code>contents.json</code> is the app's active manifest; <code>korean_lang.json</code> is a named snapshot so you can switch back to this pack later via <strong>Settings → Change content pack</strong> even after installing other packs.</span>
                 <span data-lang="ko">JSON이 왜 두 개? <code>contents.json</code>은 앱이 실제로 읽는 활성 매니페스트이고, <code>korean_lang.json</code>은 이름이 있는 스냅샷입니다. 다른 팩을 설치한 뒤에도 <strong>설정 → 컨텐츠 팩 변경</strong>에서 다시 이 팩으로 돌아올 수 있게 해줍니다.</span>
@@ -835,6 +835,7 @@ footer .links { display: flex; gap: 24px; }
             </p>
 <pre style="background:#1a2328;color:#e8eaed;padding:18px 22px;border-radius:10px;overflow-x:auto;font-size:13px;line-height:1.55;font-family:'SF Mono',Menlo,Consolas,monospace;margin:10px 0 22px;">{
   "title": "<span style="color:#FFB359">한국어 100문장 샘플</span>",
+  "defaultimage": "<span style="color:#FFB359">ko/ko.jpg</span>",
   "pages": [
     {
       "audiofile": "<span style="color:#8be9fd">ko/k001.m4a</span>",
@@ -875,6 +876,7 @@ footer .links { display: flex; gap: 24px; }
                 </thead>
                 <tbody>
                     <tr><td style="padding:10px 14px;border-bottom:1px solid var(--border);"><code>title</code></td><td style="padding:10px 14px;border-bottom:1px solid var(--border);">—</td><td style="padding:10px 14px;border-bottom:1px solid var(--border);"><span data-lang="en">Pack title shown in the list header.</span><span data-lang="ko">목록 상단에 표시되는 팩 제목.</span></td></tr>
+                    <tr><td style="padding:10px 14px;border-bottom:1px solid var(--border);"><code>defaultimage</code></td><td style="padding:10px 14px;border-bottom:1px solid var(--border);">—</td><td style="padding:10px 14px;border-bottom:1px solid var(--border);"><span data-lang="en">Zip-root-relative path used as the fallback image for pages that omit <code>imagefile</code> or whose image is missing. Example: <code>ko/ko.jpg</code>.</span><span data-lang="ko">페이지의 <code>imagefile</code>이 비어있거나 파일이 없을 때 사용되는 폴백 이미지 경로 (zip 루트 기준). 예: <code>ko/ko.jpg</code>.</span></td></tr>
                     <tr><td style="padding:10px 14px;border-bottom:1px solid var(--border);"><code>pages</code></td><td style="padding:10px 14px;border-bottom:1px solid var(--border);">✅</td><td style="padding:10px 14px;border-bottom:1px solid var(--border);"><span data-lang="en">Array of page entries; order = listen order.</span><span data-lang="ko">페이지 배열. 순서 = 재생 순서.</span></td></tr>
                     <tr><td style="padding:10px 14px;border-bottom:1px solid var(--border);"><code>pages[].audiofile</code></td><td style="padding:10px 14px;border-bottom:1px solid var(--border);">✅</td><td style="padding:10px 14px;border-bottom:1px solid var(--border);"><span data-lang="en">Relative path to the audio (zip root). mp3/m4a/wav/flac/ogg/aac/opus.</span><span data-lang="ko">오디오 경로 (zip 루트 기준). mp3/m4a/wav/flac/ogg/aac/opus 지원.</span></td></tr>
                     <tr><td style="padding:10px 14px;border-bottom:1px solid var(--border);"><code>pages[].imagefile</code></td><td style="padding:10px 14px;border-bottom:1px solid var(--border);">—</td><td style="padding:10px 14px;border-bottom:1px solid var(--border);"><span data-lang="en">Relative path to a page image. jpg/png/webp. Omit for text-only pages.</span><span data-lang="ko">페이지 이미지 경로. jpg/png/webp. 생략하면 텍스트만 표시.</span></td></tr>
