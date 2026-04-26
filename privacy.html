@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Privacy policy for NotchPlay (한결플레이) — no data collection, on-device storage only.">
+<meta name="theme-color" content="#FFB359">
+<title>NotchPlay — Privacy Policy · 개인정보처리방침</title>
+<!-- Favicon: same inline SVG as the landing page so the two tabs match. -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 108 108'><rect width='108' height='108' rx='22' fill='%23FFB359'/><path fill='%23FFFFFF' d='M54 28 C40 28 30 38 30 52 L30 70 C30 72 32 74 34 74 L40 74 C42 74 44 72 44 70 L44 60 C44 58 42 56 40 56 L36 56 C36 46 44 38 54 38 C64 38 72 46 72 56 L68 56 C66 56 64 58 64 60 L64 70 C64 72 66 74 68 74 L74 74 C76 74 78 72 78 70 L78 52 C78 38 68 28 54 28 Z'/></svg>">
+<script>
+// Pick initial language from localStorage or browser before first paint.
+(function() {
+    try {
+        var stored = localStorage.getItem('notchplay.lang');
+        var lang = stored || ((navigator.language || 'en').toLowerCase().indexOf('ko') === 0 ? 'ko' : 'en');
+        document.documentElement.lang = lang;
+    } catch (e) {}
+})();
+</script>
+<style>
+:root {
+    --teal: #C2691E;
+    --teal-dark: #8C4A0F;
+    --teal-light: #FFEBD0;
+    --accent: #E38A3C;
+    --fg: #212529;
+    --muted: #6C757D;
+    --bg: #F8F9FA;
+    --surface: #FFFFFF;
+    --border: #E9ECEF;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Segoe UI", Roboto, sans-serif;
+    color: var(--fg);
+    background: var(--bg);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+a { color: var(--teal); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Language switch: only one of en/ko subtree is ever visible. */
+html[lang="en"] [data-lang="ko"] { display: none !important; }
+html[lang="ko"] [data-lang="en"] { display: none !important; }
+
+nav {
+    position: sticky; top: 0; z-index: 10;
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: saturate(180%) blur(14px);
+    -webkit-backdrop-filter: saturate(180%) blur(14px);
+    border-bottom: 1px solid var(--border);
+}
+nav .wrap {
+    max-width: 900px; margin: 0 auto;
+    padding: 14px 24px;
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 20px;
+}
+nav .brand {
+    display: flex; align-items: center; gap: 10px;
+    font-weight: 700; color: var(--fg); font-size: 18px;
+}
+nav .links { display: flex; gap: 20px; font-size: 15px; align-items: center; }
+nav .links a { color: var(--muted); font-weight: 500; }
+nav .links a:hover { color: var(--teal); text-decoration: none; }
+nav .lang-btn {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.15s;
+    font-family: inherit;
+}
+nav .lang-btn:hover { border-color: var(--teal); color: var(--teal); }
+
+main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 56px 24px 80px;
+}
+
+h1 {
+    font-size: clamp(30px, 4.5vw, 42px);
+    font-weight: 800;
+    letter-spacing: -0.015em;
+    margin-bottom: 14px;
+    line-height: 1.15;
+}
+.subtitle {
+    color: var(--muted);
+    font-size: 15px;
+    margin-bottom: 44px;
+}
+h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 14px;
+    letter-spacing: -0.005em;
+    border-left: 4px solid var(--teal);
+    padding-left: 14px;
+}
+p { margin-bottom: 14px; font-size: 16px; }
+ul { margin: 10px 0 18px 24px; }
+ul li { margin-bottom: 8px; font-size: 16px; }
+strong { color: var(--fg); font-weight: 600; }
+code, .inline-code {
+    background: var(--teal-light);
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: var(--teal-dark);
+    font-size: 14px;
+    font-family: "SF Mono", Menlo, Consolas, monospace;
+}
+.divider {
+    border: 0;
+    border-top: 1px solid var(--border);
+    margin: 40px 0;
+}
+.contact-block {
+    background: var(--teal-light);
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin-top: 12px;
+    font-size: 15px;
+}
+
+footer {
+    background: #1a2328;
+    color: #adb5bd;
+    padding: 36px 24px 32px;
+    font-size: 14px;
+    margin-top: 60px;
+}
+footer .wrap {
+    max-width: 900px; margin: 0 auto;
+    display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px;
+}
+footer a { color: #ced4da; }
+footer a:hover { color: #fff; }
+footer .links { display: flex; gap: 20px; }
+
+@media (max-width: 560px) {
+    nav .links a { display: none; }
+    nav .links .lang-btn { display: inline-block; }
+    main { padding: 36px 20px 60px; }
+    h2 { font-size: 20px; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+    <div class="wrap">
+        <a href="index.html" class="brand">
+            <svg width="28" height="28" viewBox="0 0 108 108" xmlns="http://www.w3.org/2000/svg">
+                <rect width="108" height="108" rx="22" fill="#FFB359"/>
+                <path fill="#FFFFFF" d="M54 28 C40 28 30 38 30 52 L30 70 C30 72 32 74 34 74 L40 74 C42 74 44 72 44 70 L44 60 C44 58 42 56 40 56 L36 56 C36 46 44 38 54 38 C64 38 72 46 72 56 L68 56 C66 56 64 58 64 60 L64 70 C64 72 66 74 68 74 L74 74 C76 74 78 72 78 70 L78 52 C78 38 68 28 54 28 Z"/>
+            </svg>
+            <span>NotchPlay</span>
+        </a>
+        <div class="links">
+            <a href="index.html" data-lang="en">← Home</a>
+            <a href="index.html" data-lang="ko">← 홈</a>
+            <button class="lang-btn" id="lang-toggle" type="button" aria-label="Switch language">
+                <span data-lang="en">한국어</span>
+                <span data-lang="ko">English</span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <h1>
+        <span data-lang="en">Privacy Policy</span>
+        <span data-lang="ko">개인정보처리방침</span>
+    </h1>
+    <p class="subtitle">
+        <span data-lang="en"><strong>Last updated</strong>: 2026-04-23</span>
+        <span data-lang="ko"><strong>최종 업데이트</strong>: 2026-04-23</span>
+    </p>
+
+    <!-- ── Korean ─────────────────────────────────────────────────── -->
+    <div data-lang="ko">
+        <p>한결플레이(이하 "앱")는 사용자의 개인정보를 수집하지 않습니다.</p>
+
+        <h2>1. 수집 및 전송하는 정보</h2>
+        <p>앱은 다음 정보를 <strong>수집하지도, 외부로 전송하지도 않습니다</strong>.</p>
+        <ul>
+            <li>개인 식별 정보(이름, 이메일, 전화번호 등)</li>
+            <li>위치 정보</li>
+            <li>사용 통계, 크래시 리포트, 분석 데이터</li>
+            <li>광고 식별자</li>
+        </ul>
+
+        <h2>2. 기기 내 저장</h2>
+        <p>앱은 다음 항목을 <strong>기기 내부에만</strong> 저장합니다. 이 데이터는 앱을 삭제하면 함께 제거됩니다.</p>
+        <ul>
+            <li>설정 값 (세로 고정, 파형 표시, 다운로드 URL 등)</li>
+            <li>마지막 재생 페이지 및 위치</li>
+            <li>사용자가 직접 다운로드한 콘텐츠 팩 파일 (오디오, 이미지, <code>contents.json</code>)</li>
+        </ul>
+
+        <h2>3. 권한</h2>
+        <ul>
+            <li><strong>오디오 접근</strong> (Android <code>READ_MEDIA_AUDIO</code> / iOS Music Library): 기기에 있는 오디오 파일을 목록에 표시하고 재생하기 위함. 외부로 전송되지 않습니다.</li>
+            <li><strong>네트워크</strong>: 오직 사용자가 설정 화면에서 직접 입력한 다운로드 URL에만 접속합니다. 분석·광고·추적 서버에는 접속하지 않습니다.</li>
+        </ul>
+
+        <h2>4. 콘텐츠에 대한 책임</h2>
+        <p>앱은 재생 도구이며, 다운로드 URL로 가져오는 콘텐츠의 저작권과 적법성은 해당 콘텐츠를 제공·지정한 사용자의 책임입니다.</p>
+
+        <h2>5. 아동</h2>
+        <p>앱은 특별히 13세 미만 아동을 대상으로 설계되지 않았으며, 아동의 개인정보를 수집하지 않습니다.</p>
+
+        <h2>6. 문의</h2>
+        <div class="contact-block">
+            개인정보와 관련한 문의는 다음으로 연락해 주세요.<br>
+            이메일: <a href="mailto:deepwinterk@gmail.com">deepwinterk@gmail.com</a>
+        </div>
+    </div>
+
+    <!-- ── English ────────────────────────────────────────────────── -->
+    <div data-lang="en">
+        <p>NotchPlay (the "App") does <strong>not</strong> collect any personal data.</p>
+
+        <h2>1. What we do NOT collect or transmit</h2>
+        <ul>
+            <li>Personally identifiable information (name, email, phone, etc.)</li>
+            <li>Location data</li>
+            <li>Usage analytics, crash reports, or any telemetry</li>
+            <li>Advertising identifiers</li>
+        </ul>
+
+        <h2>2. On-device storage</h2>
+        <p>The App stores the following <strong>only on your device</strong>. This data is removed when you uninstall the App.</p>
+        <ul>
+            <li>Preferences (portrait lock, waveform visibility, download URL, etc.)</li>
+            <li>Last played page and position</li>
+            <li>Content-pack files you download (audio, images, <code>contents.json</code>)</li>
+        </ul>
+
+        <h2>3. Permissions</h2>
+        <ul>
+            <li><strong>Audio access</strong> (<code>READ_MEDIA_AUDIO</code> on Android, Music Library on iOS): used solely to list and play audio files that are already on your device. Nothing leaves the device.</li>
+            <li><strong>Network</strong>: the App connects only to the download URL you enter yourself in Settings. No analytics, advertising, or tracking servers are contacted.</li>
+        </ul>
+
+        <h2>4. Content responsibility</h2>
+        <p>The App is a playback tool. Responsibility for the legality and licensing of any content fetched via a download URL rests with the user who supplies that URL.</p>
+
+        <h2>5. Children</h2>
+        <p>The App is not specifically targeted at children under 13 and does not knowingly collect any data from children.</p>
+
+        <h2>6. Contact</h2>
+        <div class="contact-block">
+            Questions about this policy may be directed to:<br>
+            Email: <a href="mailto:deepwinterk@gmail.com">deepwinterk@gmail.com</a>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="wrap">
+        <div>
+            <span data-lang="en">© 2026 DeepWinter · NotchPlay</span>
+            <span data-lang="ko">© 2026 DeepWinter · NotchPlay · 한결플레이</span>
+        </div>
+        <div class="links">
+            <a href="index.html" data-lang="en">Home</a>
+            <a href="index.html" data-lang="ko">홈</a>
+            <a href="index.html#features" data-lang="en">Features</a>
+            <a href="index.html#features" data-lang="ko">기능</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+(function() {
+    var btn = document.getElementById('lang-toggle');
+    if (!btn) return;
+    btn.addEventListener('click', function() {
+        var cur = document.documentElement.lang === 'ko' ? 'ko' : 'en';
+        var next = cur === 'ko' ? 'en' : 'ko';
+        document.documentElement.lang = next;
+        try { localStorage.setItem('notchplay.lang', next); } catch (e) {}
+    });
+})();
+</script>
+
+</body>
+</html>
