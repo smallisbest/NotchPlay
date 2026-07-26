@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "updated_at": "2026-04-27",
+  "packs": [
+    {
+      "id": "korean_100",
+      "title":       { "ko": "한국어 100문장 샘플", "en": "Korean 100 Sample" },
+      "description": { "ko": "한국어 학습용 100문장 + 영어 번역 + macOS Yuna TTS 음성. 한·영 학습자 모두에게 적합한 컴팩트 입문 팩.",
+                       "en": "100 Korean sentences with English translations and macOS Yuna TTS audio. A compact starter pack for Korean and English learners alike." },
+      "url":         "https://smallisbest.github.io/NotchPlay/sample_ko.zip",
+      "size_bytes":  3319682,
+      "language":    "ko",
+      "author":      "DeepWinter",
+      "license":     "CC0",
+      "thumbnail":   "https://smallisbest.github.io/NotchPlay/sample_ko_thumb.jpg"
+    },
+    {
+      "id": "korea_english",
+      "title":       { "ko": "한글영어", "en": "Korean English" },
+      "description": { "ko": "한글영어 100일",
+                       "en": "Korean english 100 days"},
+      "url":         "https://smallisbest.github.io/NotchPlay/kenglish.zip",
+      "language":    "ko"
+    }
+  ]
+}
