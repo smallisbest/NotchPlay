@@ -1,14 +1,14 @@
 {
   "schema": 1,
   "android": {
-    "versionCode": 7,
-    "versionName": "0.1.6",
-    "url": "https://smallisbest.github.io/NotchPlay/downloads/NotchPlay-0.1.6.apk",
+    "versionCode": 8,
+    "versionName": "1.0.0",
+    "url": "https://smallisbest.github.io/NotchPlay/downloads/NotchPlay-1.0.0.apk",
     "releaseNotes": "새 기능\n- 노래방 자막 — 이미지/자막/오버레이 3가지 표시 모드, 한글+영어 이중 트랙, 반복 구간 자동 인식\n- 앱 업데이트 확인 — 자동 체크(건너뛰기/나중에) + 설정에서 수동 확인\n- 되감기 버튼 — 재생 중 설정한 초만큼 뒤로 (기본 5초, 설정에서 1~60초 조정)\n- 온라인 컨텐츠 팩 카탈로그 — 공개 팩 목록에서 한 번에 다운로드\n- 차량 연동\n• Android Auto 지원 (목록·재생·이전/다음)\n• iOS 잠금화면 / 블루투스 / CarPlay 기본 컨트롤\n- 설정 백업/복원 (파일·클립보드·이메일, JSON, iOS↔Android 호환)\n- 진행형 파형 표시 — 전체 분석 기다리지 않고 실시간으로 채워짐"
   },
   "ios": {
-    "build": 7,
-    "marketingVersion": "0.1.6",
+    "build": 8,
+    "marketingVersion": "1.0.0",
     "appStoreUrl": "https://apps.apple.com/app/idXXXXXXXXXX",
     "releaseNotes": "새 기능\n- 노래방 자막 — 이미지/자막/오버레이 3가지 표시 모드, 한글+영어 이중 트랙, 반복 구간 자동 인식\n- 앱 업데이트 확인 — 자동 체크(건너뛰기/나중에) + 설정에서 수동 확인\n- 되감기 버튼 — 재생 중 설정한 초만큼 뒤로 (기본 5초, 설정에서 1~60초 조정)\n- 온라인 컨텐츠 팩 카탈로그 — 공개 팩 목록에서 한 번에 다운로드\n- 차량 연동\n• Android Auto 지원 (목록·재생·이전/다음)\n• iOS 잠금화면 / 블루투스 / CarPlay 기본 컨트롤\n- 설정 백업/복원 (파일·클립보드·이메일, JSON, iOS↔Android 호환)\n- 진행형 파형 표시 — 전체 분석 기다리지 않고 실시간으로 채워짐"
   }
